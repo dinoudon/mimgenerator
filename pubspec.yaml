@@ -1,0 +1,89 @@
+name: memegen
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: '>=2.15.0-116.0.dev <3.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  get: 4.3.8
+  getxfire: ^0.3.1
+  json_annotation: ^4.3.0
+  text_editor: ^0.7.0
+  auto_size_text: ^3.0.0
+  image_picker: ^0.8.4+4
+  screenshot: ^1.2.3
+  path_provider: ^2.0.7
+  share_plus: ^3.0.4
+
+dev_dependencies:
+  auto_size_text: ^3.0.0
+  build_runner: ^2.1.5
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+  json_model: ^1.0.0
+  json_serializable: ^6.0.1
+
+  
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Billabong
+      fonts:
+        - asset: fonts/Billabong.ttf
+    - family: GrandHotel
+      fonts:
+        - asset: fonts/GrandHotel.otf
+    - family: OpenSans
+      fonts:
+        - asset: fonts/OpenSans.ttf
+    - family: Oswald
+      fonts:
+        - asset: fonts/Oswald.ttf
+    - family: Quicksand
+      fonts:
+        - asset: fonts/Quicksand.otf
+    - family: BeautifulPeople
+      fonts:
+        - asset: fonts/BeautifulPeople.ttf
+    - family: BeautyMountains
+      fonts:
+        - asset: fonts/BeautyMountains.ttf
+    - family: BiteChocolate
+      fonts:
+        - asset: fonts/BiteChocolate.ttf
+    - family: BlackberryJam
+      fonts:
+        - asset: fonts/BlackberryJam.ttf
+    - family: Tomatoes
+      fonts:
+        - asset: fonts/Tomatoes.ttf
+    - family: BunchBlossoms
+      fonts:
+        - asset: fonts/BunchBlossoms.ttf
+    - family: CinderelaRegular
+      fonts:
+        - asset: fonts/CinderelaRegular.ttf
+    - family: Countryside
+      fonts:
+        - asset: fonts/Countryside.ttf
+    - family: Halimun
+      fonts:
+        - asset: fonts/Halimun.ttf
+    - family: LemonJelly
+      fonts:
+        - asset: fonts/LemonJelly.ttf
+    - family: QuiteMagicalRegular
+      fonts:
+        - asset: fonts/QuiteMagicalRegular.ttf
+    - family: TropicalAsianDemoRegular
+      fonts:
+        - asset: fonts/TropicalAsianDemoRegular.ttf
+    - family: VeganStyle
+      fonts:
+        - asset: fonts/VeganStyle.ttf
