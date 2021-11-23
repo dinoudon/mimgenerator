@@ -1,16 +1,17 @@
 # memegen
 
-A new Flutter project.
+A Meme Generator made in Flutter.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Known problem :
+Since GetX can't update a properties in child widget within list inside Stack, so I used manual placement for Stack child. I will keep looking solution for this problem and let me know if somebody know whats wrong with it.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Further enhancement  :
+- Image gesture for resizing small images.
+- share into social media.
+- screenshot within image only.
+- add drag boundary around image, so text won't go further than the image itself.
+- adding splash.
+- adding history image which has been edited.
+- ...
