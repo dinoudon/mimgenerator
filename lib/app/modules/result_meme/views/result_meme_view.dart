@@ -39,6 +39,15 @@ class ResultMemeView extends GetView<ResultMemeController> {
                       imageFile.create(recursive: true);
                     }
                     imageFile.writeAsBytes(image);
+                    Get.showSnackbar(
+                      GetBar(
+                        isDismissible: true,
+                        title: "Saved.",
+                        message: "File Saved in ${imageFile.path}",
+                        snackPosition: SnackPosition.TOP,
+                        duration: Duration(milliseconds: 2000),
+                      ),
+                    );
                   },
                   child: Text("Simpan")),
               ElevatedButton(

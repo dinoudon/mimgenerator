@@ -31,13 +31,14 @@ class EditMemeView extends GetView<EditMemeController> {
                     if (controller.position_reveal_logo.value < 3) {
                       final ImagePicker _picker = ImagePicker();
                       final XFile? image = await _picker.pickImage(
-                          source: ImageSource.gallery, maxHeight: 100);
-                      controller
-                              .listLogo[controller.position_reveal_logo.value] =
-                          image!.path;
-                      controller.visibilityLogo[
-                          controller.position_reveal_logo.value] = true;
-                      controller.position_reveal_logo.value += 1;
+                          source: ImageSource.gallery, maxHeight: 200);
+                      if (image != null) {
+                        controller.listLogo[controller
+                            .position_reveal_logo.value] = image!.path;
+                        controller.visibilityLogo[
+                            controller.position_reveal_logo.value] = true;
+                        controller.position_reveal_logo.value += 1;
+                      }
                     } else {
                       Get.showSnackbar(
                         GetBar(
