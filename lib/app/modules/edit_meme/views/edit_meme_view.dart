@@ -300,7 +300,7 @@ class EditMemeView extends GetView<EditMemeController> {
                     fonts: controller.fonts,
                     text: controller.listText[pos],
                     textStyle: controller.listTextStyle[pos],
-                    textAlingment: controller.textAlign.value,
+                    textAlingment: controller.listTextAlign[pos],
                     minFontSize: 10,
                     onEditCompleted: (style, align, text) {
                       controller.listTextStyle[pos] = style;

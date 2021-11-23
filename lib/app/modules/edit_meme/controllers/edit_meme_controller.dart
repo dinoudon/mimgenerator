@@ -27,16 +27,6 @@ class EditMemeController extends GetxController {
     'TropicalAsianDemoRegular',
     'VeganStyle',
   ];
-  Rx<TextStyle> textStyle = TextStyle(
-    fontSize: 50,
-    color: Colors.black,
-    fontFamily: 'Billabong',
-  ).obs;
-  var text = 'Sample Text'.obs;
-  Rx<TextAlign> textAlign = TextAlign.center.obs;
-
-  RxList<double> positionX = [0.0, 0.0].obs;
-  RxList<double> positionY = [0.0, 0.0].obs;
 
   var position_reveal = 0.obs;
   var position_reveal_logo = 0.obs;
@@ -58,17 +48,11 @@ class EditMemeController extends GetxController {
 
   RxList<String> listLogo = RxList.empty();
 
-  RxDouble dx = 0.0.obs;
-  RxDouble dy = 0.0.obs;
-  Offset offset = Offset.zero;
-
   ScreenshotController screenshotController = ScreenshotController();
 
   final count = 0.obs;
   @override
   void onInit() {
-    offset = Offset(dx.value, dy.value);
-
     super.onInit();
   }
 
@@ -79,5 +63,4 @@ class EditMemeController extends GetxController {
 
   @override
   void onClose() {}
-  void increment() => count.value++;
 }
